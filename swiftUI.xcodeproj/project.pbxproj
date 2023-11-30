@@ -11,6 +11,11 @@
 		290A0A8E2B15CC0300E23F98 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A8D2B15CC0300E23F98 /* Images.swift */; };
 		290A0A902B15D16300E23F98 /* frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A8F2B15D16300E23F98 /* frame.swift */; };
 		290A0A922B15ECAB00E23F98 /* Backgrounds & Overlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A912B15ECAB00E23F98 /* Backgrounds & Overlays.swift */; };
+		290A0A982B164B0E00E23F98 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A972B164B0E00E23F98 /* Stacks.swift */; };
+		290A0A9A2B1769EF00E23F98 /* padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A992B1769EF00E23F98 /* padding.swift */; };
+		290A0A9E2B177D9A00E23F98 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A9D2B177D9A00E23F98 /* Spacer.swift */; };
+		290A0AA02B179E3000E23F98 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A9F2B179E3000E23F98 /* Initializer.swift */; };
+		290A0AA22B17A94B00E23F98 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA12B17A94B00E23F98 /* ForEach.swift */; };
 		29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B792B12F511004A1165 /* swiftUIApp.swift */; };
 		29138B7C2B12F511004A1165 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B7B2B12F511004A1165 /* ContentView.swift */; };
 		29138B7E2B12F513004A1165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29138B7D2B12F513004A1165 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		290A0A8D2B15CC0300E23F98 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		290A0A8F2B15D16300E23F98 /* frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frame.swift; sourceTree = "<group>"; };
 		290A0A912B15ECAB00E23F98 /* Backgrounds & Overlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Backgrounds & Overlays.swift"; sourceTree = "<group>"; usesTabs = 0; };
+		290A0A972B164B0E00E23F98 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
+		290A0A992B1769EF00E23F98 /* padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = padding.swift; sourceTree = "<group>"; };
+		290A0A9D2B177D9A00E23F98 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		290A0A9F2B179E3000E23F98 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		290A0AA12B17A94B00E23F98 /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		29138B762B12F511004A1165 /* swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29138B792B12F511004A1165 /* swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIApp.swift; sourceTree = "<group>"; };
 		29138B7B2B12F511004A1165 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 				290A0A8D2B15CC0300E23F98 /* Images.swift */,
 				290A0A8F2B15D16300E23F98 /* frame.swift */,
 				290A0A912B15ECAB00E23F98 /* Backgrounds & Overlays.swift */,
+				290A0A972B164B0E00E23F98 /* Stacks.swift */,
+				290A0A992B1769EF00E23F98 /* padding.swift */,
+				290A0A9D2B177D9A00E23F98 /* Spacer.swift */,
+				290A0A9F2B179E3000E23F98 /* Initializer.swift */,
+				290A0AA12B17A94B00E23F98 /* ForEach.swift */,
 				29138B7D2B12F513004A1165 /* Assets.xcassets */,
 				29138B7F2B12F513004A1165 /* Preview Content */,
 			);
@@ -283,10 +298,15 @@
 			files = (
 				290A0A8C2B15C35D00E23F98 /* Icons.swift in Sources */,
 				29138BA62B136D9C004A1165 /* shapesBootcamp.swift in Sources */,
+				290A0A982B164B0E00E23F98 /* Stacks.swift in Sources */,
+				290A0AA22B17A94B00E23F98 /* ForEach.swift in Sources */,
 				29138BA82B1399F5004A1165 /* colors.swift in Sources */,
 				29138B7C2B12F511004A1165 /* ContentView.swift in Sources */,
 				29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */,
 				290A0A922B15ECAB00E23F98 /* Backgrounds & Overlays.swift in Sources */,
+				290A0A9A2B1769EF00E23F98 /* padding.swift in Sources */,
+				290A0AA02B179E3000E23F98 /* Initializer.swift in Sources */,
+				290A0A9E2B177D9A00E23F98 /* Spacer.swift in Sources */,
 				290A0A8E2B15CC0300E23F98 /* Images.swift in Sources */,
 				29138BA42B130D10004A1165 /* textBootcamp.swift in Sources */,
 				290A0A902B15D16300E23F98 /* frame.swift in Sources */,

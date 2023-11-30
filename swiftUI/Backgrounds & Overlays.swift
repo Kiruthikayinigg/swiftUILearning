@@ -63,7 +63,21 @@ struct Backgrounds___Overlays: View {
                             endPoint: .bottomLeading)
                     )
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
-                    .shadow(color: .black,radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 0.0, y:0.0)
+                    .shadow(color: .purple,radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 0.0, y:0.0)
+                    .overlay(
+                        Circle()
+                            .fill(Color.blue)
+                            .frame(width: 35, height: 35)
+                            .overlay(
+                                Text("5")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                
+                            ),
+                     //   .shadow(color: .purple,radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 5, y:5),
+                                alignment: .bottomTrailing
+                           
+                    )
             )
         
     }
