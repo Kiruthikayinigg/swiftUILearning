@@ -16,6 +16,9 @@
 		290A0A9E2B177D9A00E23F98 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A9D2B177D9A00E23F98 /* Spacer.swift */; };
 		290A0AA02B179E3000E23F98 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0A9F2B179E3000E23F98 /* Initializer.swift */; };
 		290A0AA22B17A94B00E23F98 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA12B17A94B00E23F98 /* ForEach.swift */; };
+		290A0AA42B18C8CC00E23F98 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA32B18C8CC00E23F98 /* ScrollView.swift */; };
+		290A0AA62B18F27200E23F98 /* GridBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA52B18F27200E23F98 /* GridBootcamp.swift */; };
+		290A0AA82B18FA8100E23F98 /* ButtonBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA72B18FA8100E23F98 /* ButtonBootcamp.swift */; };
 		29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B792B12F511004A1165 /* swiftUIApp.swift */; };
 		29138B7C2B12F511004A1165 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B7B2B12F511004A1165 /* ContentView.swift */; };
 		29138B7E2B12F513004A1165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29138B7D2B12F513004A1165 /* Assets.xcassets */; };
@@ -26,7 +29,21 @@
 		29138BA42B130D10004A1165 /* textBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA32B130D10004A1165 /* textBootcamp.swift */; };
 		29138BA62B136D9C004A1165 /* shapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA52B136D9C004A1165 /* shapesBootcamp.swift */; };
 		29138BA82B1399F5004A1165 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA72B1399F5004A1165 /* colors.swift */; };
+		29B1C9A72B21A9E4008C9EF2 /* TransitionBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */; };
+		29B1C9A92B21BF17008C9EF2 /* SheetsBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */; };
+		29B1C9AB2B21C5A9008C9EF2 /* PopoverBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */; };
+		29B1C9AD2B21D155008C9EF2 /* NavigationViewBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */; };
+		29B1C9AF2B21D943008C9EF2 /* ListBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */; };
+		29B1C9B12B2205E2008C9EF2 /* AlertBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */; };
+		29BB385F2B208FE500467F7E /* bindingBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB385E2B208FE500467F7E /* bindingBoot.swift */; };
+		29BB38612B2090AD00467F7E /* ConditionalBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB38602B2090AD00467F7E /* ConditionalBoot.swift */; };
+		29BB38632B20DC6F00467F7E /* AnimationBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB38622B20DC6F00467F7E /* AnimationBoot.swift */; };
+		29BB38652B20E89600467F7E /* AnimationTimingBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB38642B20E89600467F7E /* AnimationTimingBoot.swift */; };
 		29D2D7412B14A6C7002D5223 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D2D7402B14A6C7002D5223 /* Gradients.swift */; };
+		29F227012B1B2F35005B1B2C /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F227002B1B2F35005B1B2C /* SafeArea.swift */; };
+		29F227032B1B73A1005B1B2C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F227022B1B73A1005B1B2C /* State.swift */; };
+		29F227052B1B8AB2005B1B2C /* ExtractedFunctionboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F227042B1B8AB2005B1B2C /* ExtractedFunctionboot.swift */; };
+		29F227072B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F227062B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +73,9 @@
 		290A0A9D2B177D9A00E23F98 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		290A0A9F2B179E3000E23F98 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 		290A0AA12B17A94B00E23F98 /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		290A0AA32B18C8CC00E23F98 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		290A0AA52B18F27200E23F98 /* GridBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBootcamp.swift; sourceTree = "<group>"; };
+		290A0AA72B18FA8100E23F98 /* ButtonBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBootcamp.swift; sourceTree = "<group>"; };
 		29138B762B12F511004A1165 /* swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29138B792B12F511004A1165 /* swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIApp.swift; sourceTree = "<group>"; };
 		29138B7B2B12F511004A1165 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +89,21 @@
 		29138BA32B130D10004A1165 /* textBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBootcamp.swift; sourceTree = "<group>"; };
 		29138BA52B136D9C004A1165 /* shapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapesBootcamp.swift; sourceTree = "<group>"; };
 		29138BA72B1399F5004A1165 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBoot.swift; sourceTree = "<group>"; };
+		29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsBoot.swift; sourceTree = "<group>"; };
+		29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverBoot.swift; sourceTree = "<group>"; };
+		29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewBoot.swift; sourceTree = "<group>"; };
+		29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBoot.swift; sourceTree = "<group>"; };
+		29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBoot.swift; sourceTree = "<group>"; };
+		29BB385E2B208FE500467F7E /* bindingBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindingBoot.swift; sourceTree = "<group>"; };
+		29BB38602B2090AD00467F7E /* ConditionalBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBoot.swift; sourceTree = "<group>"; };
+		29BB38622B20DC6F00467F7E /* AnimationBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationBoot.swift; sourceTree = "<group>"; };
+		29BB38642B20E89600467F7E /* AnimationTimingBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTimingBoot.swift; sourceTree = "<group>"; };
 		29D2D7402B14A6C7002D5223 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		29F227002B1B2F35005B1B2C /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
+		29F227022B1B73A1005B1B2C /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		29F227042B1B8AB2005B1B2C /* ExtractedFunctionboot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedFunctionboot.swift; sourceTree = "<group>"; };
+		29F227062B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubviewsBoot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +169,23 @@
 				290A0A9D2B177D9A00E23F98 /* Spacer.swift */,
 				290A0A9F2B179E3000E23F98 /* Initializer.swift */,
 				290A0AA12B17A94B00E23F98 /* ForEach.swift */,
+				290A0AA32B18C8CC00E23F98 /* ScrollView.swift */,
+				290A0AA52B18F27200E23F98 /* GridBootcamp.swift */,
+				29F227002B1B2F35005B1B2C /* SafeArea.swift */,
+				290A0AA72B18FA8100E23F98 /* ButtonBootcamp.swift */,
+				29F227022B1B73A1005B1B2C /* State.swift */,
+				29F227042B1B8AB2005B1B2C /* ExtractedFunctionboot.swift */,
+				29F227062B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift */,
+				29BB385E2B208FE500467F7E /* bindingBoot.swift */,
+				29BB38602B2090AD00467F7E /* ConditionalBoot.swift */,
+				29BB38622B20DC6F00467F7E /* AnimationBoot.swift */,
+				29BB38642B20E89600467F7E /* AnimationTimingBoot.swift */,
+				29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */,
+				29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */,
+				29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */,
+				29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */,
+				29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */,
+				29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */,
 				29138B7D2B12F513004A1165 /* Assets.xcassets */,
 				29138B7F2B12F513004A1165 /* Preview Content */,
 			);
@@ -296,19 +347,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BB38612B2090AD00467F7E /* ConditionalBoot.swift in Sources */,
 				290A0A8C2B15C35D00E23F98 /* Icons.swift in Sources */,
+				29BB385F2B208FE500467F7E /* bindingBoot.swift in Sources */,
+				29F227012B1B2F35005B1B2C /* SafeArea.swift in Sources */,
+				29B1C9A72B21A9E4008C9EF2 /* TransitionBoot.swift in Sources */,
 				29138BA62B136D9C004A1165 /* shapesBootcamp.swift in Sources */,
+				29F227032B1B73A1005B1B2C /* State.swift in Sources */,
 				290A0A982B164B0E00E23F98 /* Stacks.swift in Sources */,
 				290A0AA22B17A94B00E23F98 /* ForEach.swift in Sources */,
+				29BB38652B20E89600467F7E /* AnimationTimingBoot.swift in Sources */,
+				29B1C9AB2B21C5A9008C9EF2 /* PopoverBoot.swift in Sources */,
+				290A0AA82B18FA8100E23F98 /* ButtonBootcamp.swift in Sources */,
+				29F227072B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift in Sources */,
 				29138BA82B1399F5004A1165 /* colors.swift in Sources */,
+				290A0AA42B18C8CC00E23F98 /* ScrollView.swift in Sources */,
 				29138B7C2B12F511004A1165 /* ContentView.swift in Sources */,
+				29B1C9A92B21BF17008C9EF2 /* SheetsBoot.swift in Sources */,
 				29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */,
+				29F227052B1B8AB2005B1B2C /* ExtractedFunctionboot.swift in Sources */,
 				290A0A922B15ECAB00E23F98 /* Backgrounds & Overlays.swift in Sources */,
 				290A0A9A2B1769EF00E23F98 /* padding.swift in Sources */,
+				29BB38632B20DC6F00467F7E /* AnimationBoot.swift in Sources */,
+				29B1C9B12B2205E2008C9EF2 /* AlertBoot.swift in Sources */,
+				29B1C9AD2B21D155008C9EF2 /* NavigationViewBoot.swift in Sources */,
 				290A0AA02B179E3000E23F98 /* Initializer.swift in Sources */,
 				290A0A9E2B177D9A00E23F98 /* Spacer.swift in Sources */,
 				290A0A8E2B15CC0300E23F98 /* Images.swift in Sources */,
 				29138BA42B130D10004A1165 /* textBootcamp.swift in Sources */,
+				29B1C9AF2B21D943008C9EF2 /* ListBoot.swift in Sources */,
+				290A0AA62B18F27200E23F98 /* GridBootcamp.swift in Sources */,
 				290A0A902B15D16300E23F98 /* frame.swift in Sources */,
 				29D2D7412B14A6C7002D5223 /* Gradients.swift in Sources */,
 			);
