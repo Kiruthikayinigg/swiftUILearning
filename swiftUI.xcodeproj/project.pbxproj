@@ -19,6 +19,12 @@
 		290A0AA42B18C8CC00E23F98 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA32B18C8CC00E23F98 /* ScrollView.swift */; };
 		290A0AA62B18F27200E23F98 /* GridBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA52B18F27200E23F98 /* GridBootcamp.swift */; };
 		290A0AA82B18FA8100E23F98 /* ButtonBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A0AA72B18FA8100E23F98 /* ButtonBootcamp.swift */; };
+		290E34DC2B2767E7008FB119 /* DarkModeboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34DB2B2767E7008FB119 /* DarkModeboot.swift */; };
+		290E34DE2B277853008FB119 /* TapGestureBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34DD2B277853008FB119 /* TapGestureBoot.swift */; };
+		290E34E02B2862D1008FB119 /* customModelBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34DF2B2862D1008FB119 /* customModelBoot.swift */; };
+		290E34E22B286D70008FB119 /* ViewModelBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34E12B286D70008FB119 /* ViewModelBoot.swift */; };
+		290E34E42B28B74D008FB119 /* EnvironmentObjectBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34E32B28B74D008FB119 /* EnvironmentObjectBoot.swift */; };
+		290E34E62B28CA5C008FB119 /* AppStorageBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E34E52B28CA5C008FB119 /* AppStorageBoot.swift */; };
 		29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B792B12F511004A1165 /* swiftUIApp.swift */; };
 		29138B7C2B12F511004A1165 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138B7B2B12F511004A1165 /* ContentView.swift */; };
 		29138B7E2B12F513004A1165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29138B7D2B12F513004A1165 /* Assets.xcassets */; };
@@ -29,12 +35,25 @@
 		29138BA42B130D10004A1165 /* textBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA32B130D10004A1165 /* textBootcamp.swift */; };
 		29138BA62B136D9C004A1165 /* shapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA52B136D9C004A1165 /* shapesBootcamp.swift */; };
 		29138BA82B1399F5004A1165 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29138BA72B1399F5004A1165 /* colors.swift */; };
+		293351DE2B24922F00D68937 /* TextfieldBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293351DD2B24922F00D68937 /* TextfieldBoot.swift */; };
+		293351E02B24D1B600D68937 /* TextEditorBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293351DF2B24D1B600D68937 /* TextEditorBoot.swift */; };
+		293351E42B24DECB00D68937 /* toggleBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293351E32B24DECB00D68937 /* toggleBoot.swift */; };
+		293351E62B24E5FD00D68937 /* PickerBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293351E52B24E5FD00D68937 /* PickerBoot.swift */; };
+		2935220A2B25C3C600900F62 /* ColorPickerBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293522092B25C3C600900F62 /* ColorPickerBoot.swift */; };
+		2935220C2B25C72000900F62 /* datePickerBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935220B2B25C72000900F62 /* datePickerBoot.swift */; };
+		2935220E2B25D68100900F62 /* stepperbbot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935220D2B25D68100900F62 /* stepperbbot.swift */; };
+		293522102B25E39000900F62 /* SliderBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935220F2B25E39000900F62 /* SliderBoot.swift */; };
+		293522122B25EE3500900F62 /* tabViewBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293522112B25EE3500900F62 /* tabViewBoot.swift */; };
+		29678C0D2B29AAF100909701 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29678C0C2B29AAF100909701 /* IntroView.swift */; };
+		29678C0F2B29ADDA00909701 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29678C0E2B29ADDA00909701 /* OnboardingView.swift */; };
 		29B1C9A72B21A9E4008C9EF2 /* TransitionBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */; };
 		29B1C9A92B21BF17008C9EF2 /* SheetsBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */; };
 		29B1C9AB2B21C5A9008C9EF2 /* PopoverBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */; };
 		29B1C9AD2B21D155008C9EF2 /* NavigationViewBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */; };
 		29B1C9AF2B21D943008C9EF2 /* ListBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */; };
 		29B1C9B12B2205E2008C9EF2 /* AlertBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */; };
+		29B1C9B32B232756008C9EF2 /* ActionSheetBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9B22B232756008C9EF2 /* ActionSheetBoot.swift */; };
+		29B1C9B52B239045008C9EF2 /* ContextMenuBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1C9B42B239044008C9EF2 /* ContextMenuBoot.swift */; };
 		29BB385F2B208FE500467F7E /* bindingBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB385E2B208FE500467F7E /* bindingBoot.swift */; };
 		29BB38612B2090AD00467F7E /* ConditionalBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB38602B2090AD00467F7E /* ConditionalBoot.swift */; };
 		29BB38632B20DC6F00467F7E /* AnimationBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB38622B20DC6F00467F7E /* AnimationBoot.swift */; };
@@ -76,6 +95,12 @@
 		290A0AA32B18C8CC00E23F98 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		290A0AA52B18F27200E23F98 /* GridBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBootcamp.swift; sourceTree = "<group>"; };
 		290A0AA72B18FA8100E23F98 /* ButtonBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBootcamp.swift; sourceTree = "<group>"; };
+		290E34DB2B2767E7008FB119 /* DarkModeboot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeboot.swift; sourceTree = "<group>"; };
+		290E34DD2B277853008FB119 /* TapGestureBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureBoot.swift; sourceTree = "<group>"; };
+		290E34DF2B2862D1008FB119 /* customModelBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customModelBoot.swift; sourceTree = "<group>"; };
+		290E34E12B286D70008FB119 /* ViewModelBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBoot.swift; sourceTree = "<group>"; };
+		290E34E32B28B74D008FB119 /* EnvironmentObjectBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectBoot.swift; sourceTree = "<group>"; };
+		290E34E52B28CA5C008FB119 /* AppStorageBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBoot.swift; sourceTree = "<group>"; };
 		29138B762B12F511004A1165 /* swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29138B792B12F511004A1165 /* swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIApp.swift; sourceTree = "<group>"; };
 		29138B7B2B12F511004A1165 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,12 +114,25 @@
 		29138BA32B130D10004A1165 /* textBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBootcamp.swift; sourceTree = "<group>"; };
 		29138BA52B136D9C004A1165 /* shapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapesBootcamp.swift; sourceTree = "<group>"; };
 		29138BA72B1399F5004A1165 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		293351DD2B24922F00D68937 /* TextfieldBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBoot.swift; sourceTree = "<group>"; };
+		293351DF2B24D1B600D68937 /* TextEditorBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorBoot.swift; sourceTree = "<group>"; };
+		293351E32B24DECB00D68937 /* toggleBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleBoot.swift; sourceTree = "<group>"; };
+		293351E52B24E5FD00D68937 /* PickerBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBoot.swift; sourceTree = "<group>"; };
+		293522092B25C3C600900F62 /* ColorPickerBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerBoot.swift; sourceTree = "<group>"; };
+		2935220B2B25C72000900F62 /* datePickerBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datePickerBoot.swift; sourceTree = "<group>"; };
+		2935220D2B25D68100900F62 /* stepperbbot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepperbbot.swift; sourceTree = "<group>"; };
+		2935220F2B25E39000900F62 /* SliderBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBoot.swift; sourceTree = "<group>"; };
+		293522112B25EE3500900F62 /* tabViewBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewBoot.swift; sourceTree = "<group>"; };
+		29678C0C2B29AAF100909701 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		29678C0E2B29ADDA00909701 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBoot.swift; sourceTree = "<group>"; };
 		29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsBoot.swift; sourceTree = "<group>"; };
 		29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverBoot.swift; sourceTree = "<group>"; };
 		29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewBoot.swift; sourceTree = "<group>"; };
 		29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBoot.swift; sourceTree = "<group>"; };
 		29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBoot.swift; sourceTree = "<group>"; };
+		29B1C9B22B232756008C9EF2 /* ActionSheetBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetBoot.swift; sourceTree = "<group>"; };
+		29B1C9B42B239044008C9EF2 /* ContextMenuBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBoot.swift; sourceTree = "<group>"; };
 		29BB385E2B208FE500467F7E /* bindingBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindingBoot.swift; sourceTree = "<group>"; };
 		29BB38602B2090AD00467F7E /* ConditionalBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBoot.swift; sourceTree = "<group>"; };
 		29BB38622B20DC6F00467F7E /* AnimationBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationBoot.swift; sourceTree = "<group>"; };
@@ -182,10 +220,28 @@
 				29BB38642B20E89600467F7E /* AnimationTimingBoot.swift */,
 				29B1C9A62B21A9E4008C9EF2 /* TransitionBoot.swift */,
 				29B1C9A82B21BF17008C9EF2 /* SheetsBoot.swift */,
-				29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */,
 				29B1C9AC2B21D155008C9EF2 /* NavigationViewBoot.swift */,
-				29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */,
+				29B1C9AA2B21C5A9008C9EF2 /* PopoverBoot.swift */,
 				29B1C9AE2B21D943008C9EF2 /* ListBoot.swift */,
+				29B1C9B02B2205E2008C9EF2 /* AlertBoot.swift */,
+				29B1C9B22B232756008C9EF2 /* ActionSheetBoot.swift */,
+				29B1C9B42B239044008C9EF2 /* ContextMenuBoot.swift */,
+				293351DD2B24922F00D68937 /* TextfieldBoot.swift */,
+				293351DF2B24D1B600D68937 /* TextEditorBoot.swift */,
+				293351E32B24DECB00D68937 /* toggleBoot.swift */,
+				293351E52B24E5FD00D68937 /* PickerBoot.swift */,
+				293522092B25C3C600900F62 /* ColorPickerBoot.swift */,
+				2935220B2B25C72000900F62 /* datePickerBoot.swift */,
+				2935220D2B25D68100900F62 /* stepperbbot.swift */,
+				2935220F2B25E39000900F62 /* SliderBoot.swift */,
+				293522112B25EE3500900F62 /* tabViewBoot.swift */,
+				290E34DB2B2767E7008FB119 /* DarkModeboot.swift */,
+				290E34DD2B277853008FB119 /* TapGestureBoot.swift */,
+				290E34DF2B2862D1008FB119 /* customModelBoot.swift */,
+				290E34E12B286D70008FB119 /* ViewModelBoot.swift */,
+				290E34E32B28B74D008FB119 /* EnvironmentObjectBoot.swift */,
+				290E34E52B28CA5C008FB119 /* AppStorageBoot.swift */,
+				29678C0B2B29AAD600909701 /* onBoardingViews */,
 				29138B7D2B12F513004A1165 /* Assets.xcassets */,
 				29138B7F2B12F513004A1165 /* Preview Content */,
 			);
@@ -215,6 +271,15 @@
 				29138B962B12F513004A1165 /* swiftUIUITestsLaunchTests.swift */,
 			);
 			path = swiftUIUITests;
+			sourceTree = "<group>";
+		};
+		29678C0B2B29AAD600909701 /* onBoardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				29678C0C2B29AAF100909701 /* IntroView.swift */,
+				29678C0E2B29ADDA00909701 /* OnboardingView.swift */,
+			);
+			path = onBoardingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,37 +413,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BB38612B2090AD00467F7E /* ConditionalBoot.swift in Sources */,
+				290E34E22B286D70008FB119 /* ViewModelBoot.swift in Sources */,
+				293351E62B24E5FD00D68937 /* PickerBoot.swift in Sources */,
 				290A0A8C2B15C35D00E23F98 /* Icons.swift in Sources */,
 				29BB385F2B208FE500467F7E /* bindingBoot.swift in Sources */,
 				29F227012B1B2F35005B1B2C /* SafeArea.swift in Sources */,
+				290E34E42B28B74D008FB119 /* EnvironmentObjectBoot.swift in Sources */,
 				29B1C9A72B21A9E4008C9EF2 /* TransitionBoot.swift in Sources */,
 				29138BA62B136D9C004A1165 /* shapesBootcamp.swift in Sources */,
 				29F227032B1B73A1005B1B2C /* State.swift in Sources */,
 				290A0A982B164B0E00E23F98 /* Stacks.swift in Sources */,
 				290A0AA22B17A94B00E23F98 /* ForEach.swift in Sources */,
+				293522122B25EE3500900F62 /* tabViewBoot.swift in Sources */,
+				293351E42B24DECB00D68937 /* toggleBoot.swift in Sources */,
 				29BB38652B20E89600467F7E /* AnimationTimingBoot.swift in Sources */,
+				29678C0F2B29ADDA00909701 /* OnboardingView.swift in Sources */,
+				293522102B25E39000900F62 /* SliderBoot.swift in Sources */,
 				29B1C9AB2B21C5A9008C9EF2 /* PopoverBoot.swift in Sources */,
+				29678C0D2B29AAF100909701 /* IntroView.swift in Sources */,
+				29B1C9B32B232756008C9EF2 /* ActionSheetBoot.swift in Sources */,
 				290A0AA82B18FA8100E23F98 /* ButtonBootcamp.swift in Sources */,
+				290E34DE2B277853008FB119 /* TapGestureBoot.swift in Sources */,
 				29F227072B1B8DF8005B1B2C /* ExtractSubviewsBoot.swift in Sources */,
+				29B1C9B52B239045008C9EF2 /* ContextMenuBoot.swift in Sources */,
 				29138BA82B1399F5004A1165 /* colors.swift in Sources */,
+				2935220E2B25D68100900F62 /* stepperbbot.swift in Sources */,
 				290A0AA42B18C8CC00E23F98 /* ScrollView.swift in Sources */,
 				29138B7C2B12F511004A1165 /* ContentView.swift in Sources */,
 				29B1C9A92B21BF17008C9EF2 /* SheetsBoot.swift in Sources */,
 				29138B7A2B12F511004A1165 /* swiftUIApp.swift in Sources */,
 				29F227052B1B8AB2005B1B2C /* ExtractedFunctionboot.swift in Sources */,
+				2935220C2B25C72000900F62 /* datePickerBoot.swift in Sources */,
 				290A0A922B15ECAB00E23F98 /* Backgrounds & Overlays.swift in Sources */,
 				290A0A9A2B1769EF00E23F98 /* padding.swift in Sources */,
+				2935220A2B25C3C600900F62 /* ColorPickerBoot.swift in Sources */,
+				293351E02B24D1B600D68937 /* TextEditorBoot.swift in Sources */,
 				29BB38632B20DC6F00467F7E /* AnimationBoot.swift in Sources */,
 				29B1C9B12B2205E2008C9EF2 /* AlertBoot.swift in Sources */,
 				29B1C9AD2B21D155008C9EF2 /* NavigationViewBoot.swift in Sources */,
 				290A0AA02B179E3000E23F98 /* Initializer.swift in Sources */,
 				290A0A9E2B177D9A00E23F98 /* Spacer.swift in Sources */,
+				290E34DC2B2767E7008FB119 /* DarkModeboot.swift in Sources */,
 				290A0A8E2B15CC0300E23F98 /* Images.swift in Sources */,
 				29138BA42B130D10004A1165 /* textBootcamp.swift in Sources */,
 				29B1C9AF2B21D943008C9EF2 /* ListBoot.swift in Sources */,
 				290A0AA62B18F27200E23F98 /* GridBootcamp.swift in Sources */,
+				290E34E02B2862D1008FB119 /* customModelBoot.swift in Sources */,
 				290A0A902B15D16300E23F98 /* frame.swift in Sources */,
+				290E34E62B28CA5C008FB119 /* AppStorageBoot.swift in Sources */,
 				29D2D7412B14A6C7002D5223 /* Gradients.swift in Sources */,
+				293351DE2B24922F00D68937 /* TextfieldBoot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +634,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,6 +664,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
