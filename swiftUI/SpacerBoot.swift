@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Spacer: View {
+struct SpacerBoot: View {
     var body: some View {
         HStack(spacing: 0){
             Spacer()
@@ -39,5 +39,5 @@ struct Spacer: View {
 }
 
 #Preview {
-    Spacer()
+    SpacerBoot()
 }

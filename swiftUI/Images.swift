@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Images: View {
+struct ImagesBoot: View {
     var body: some View {
        Image("wall")
 //            .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
@@ -29,5 +29,5 @@ struct Images: View {
 }
 
 #Preview {
-    Images()
+    ImagesBoot()
 }

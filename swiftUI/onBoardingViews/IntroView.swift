@@ -14,9 +14,12 @@ struct IntroView: View {
             RadialGradient(gradient: Gradient(colors:[Color.blue, Color.purple]), center: .topLeading, startRadius: 5, endRadius: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
             if(currentUserSignedIn){
-                Text("Profile View")
+               ProfileView()
+                    .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .top)))
             } else{
-                Text("Onboarding View")
+//                Text("Onboarding View")
+                OnboardingView()
+                    .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .bottom)))
             }
                 //if user signed in
                 // profile view

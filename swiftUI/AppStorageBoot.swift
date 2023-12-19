@@ -16,7 +16,7 @@ struct AppStorageBoot: View {
                 Text(name)
             }
             Button("save" .uppercased()){
-                let name: String = "Emily in Paris"
+                let name: String = "sona"
                 currentUserName = name
             }
           

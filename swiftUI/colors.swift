@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct colors: View {
+struct colorsboot: View {
     var body: some View {
         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
             .fill(
@@ -31,5 +31,5 @@ struct colors: View {
 }
 
 #Preview {
-    colors()
+    colorsboot()
 }

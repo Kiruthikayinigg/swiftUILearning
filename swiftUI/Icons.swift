@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Icons: View {
+struct IconsBoot: View {
     var body: some View {
         Image(systemName: "paperplane.fill")
             .font(.largeTitle)
@@ -26,5 +26,5 @@ struct Icons: View {
 }
 
 #Preview {
-    Icons()
+    IconsBoot()
 }

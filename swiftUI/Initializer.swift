@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//struct Initializer: View {
+//struct InitializerBoot: View {
 //    let backgroundColor: Color
 //    let count : Int
 //    var title : String = "Oranges"
@@ -42,7 +42,7 @@ import SwiftUI
 //}
 //
 //#Preview {
-//    Initializer(count: 100, fruit: .apple )
+//    InitializerBoot(count: 100, fruit: .apple )
 //
 //}
 
