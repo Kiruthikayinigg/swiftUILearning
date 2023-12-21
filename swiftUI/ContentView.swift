@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, sona!")
-                .font(.title)
-                .fontWeight(.black)
-                .foregroundColor(Color.red)
-              
-        }
-        .padding()
-//        CustomModelBoot()
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundStyle(.tint)
+//            Text("Hello, sona!")
+//                .font(.title)
+//                .fontWeight(.black)
+//                .foregroundColor(Color.red)
+//              
+//        }
+//        .padding()
+        CalculatorView()
     }
 }
 

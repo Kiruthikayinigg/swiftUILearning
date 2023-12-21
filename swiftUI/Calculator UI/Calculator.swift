@@ -1,58 +1,154 @@
 import SwiftUI
 
+struct RecipeItem: Identifiable {
+    var id = UUID()
+    var textfield: String
+    var enteredCode: String
+    var selectedUnit: String
+}
+
 struct CalculatorView: View {
     @State private var showSheet: Bool = false
     @State private var enteredCode: String = ""
     @State private var selectedUnit: String? = ""
     @State private var savedText: String = ""
     @State private var isSaveButtonTapped: Bool = false
-
-    @State var quantity: [String] = [
-        "item", "tablespoon", "teaspoon", "cup", "mills", "Grams", "Kilogram",
-        "Pound", "Ounce", "Litre","Deciliter", "Centiliter", "Bottle", "Pinch", "Can",
-        "Bunch", "Packet"
+    @State var textfield: String = ""
+    @State private var recipeItems: [RecipeItem] = []
+    @State var quantity: [String: String] = [
+        "item": "",
+        "tablespoon": "Tbsp",
+        "teaspoon": "tsp",
+        "cup": "cups",
+        "mills": "ml",
+        "Grams": "g",
+        "Kilogram": "kg",
+        "Pound": "lb",
+        "Ounce": "oz",
+        "Litre": "lires",
+        "Deciliter": "dl",
+        "Centiliter": "cl",
+        "Bottle": "bottles",
+        "Pinch": "pinches",
+        "Can": "cans",
+        "Bunch": "bunches",
+        "Packet":"packets"
     ]
     
     var body: some View {
         ZStack {
-            Color.black
-                .ignoresSafeArea()
-            
-            if isSaveButtonTapped {
-                VStack {
-                    Text(savedText)
-                        .foregroundColor(.white)
-                        .padding(.bottom, 500)
-                    }
+            Color.black.ignoresSafeArea()
+            Spacer()
+                    VStack {
+                        
+                        List {
+                            Section(header:
+                            HStack {
+                    Text("Groceries")
+                }
+                        .font(.headline)
+                        .foregroundColor(.purple)
+                            ){
+                                ForEach(recipeItems) { item in
+                                    
+                                    HStack {
+                                        VStack(alignment: .leading) {
+                                            Text("\(item.textfield) \(item.enteredCode) \(item.selectedUnit)")
+                                        }
+                                        Spacer()
+                                        Button(action: {
+                                            deleteItem(item)
+                                        }) {
+                                            Image(systemName: "trash")
+                                                .foregroundColor(.red)
+                                        }
+                                    }
+                                    
+                                }
+                                .onDelete(perform: delete)
+                                //                                           .padding(.top, 50)
+                                //                            Spacer()
+                            }
+                                       }
+//                        .padding(.top, 20)
+                        
+//                        .accentColor(.purple)
+//                        .navigationTitle(" list")
+//                        .navigationBarItems( trailing: addButton)
+                        
+//                        .navigationBarTitle("Recipe Items")
+//                        .navigationBarItems(trailing: Button("Add") {
+//                            showSheet.toggle()
+//                        })
+
+
+//                    }
+//                }
+//                        func deleteItem(_ item: RecipeItem) {
+//                               if let index = recipeItems.firstIndex(where: { $0.id == item.id }) {
+//                                   recipeItems.remove(at: index)
+//                               }
+//                           }
+
+                         
 
             }
             
-            VStack {
-                Button("Click") {
-                    showSheet.toggle()
-                }
-                Spacer()
-            }
+            VStack (){
+                        Button(action: {
+                            showSheet.toggle()
+                        }) {
+                            Image(systemName: "cross.circle.fill")
+                                .font(.system(size: 20))
+                        }
+                        
+                        Spacer()
+                    }
+                    .padding()
+    
             .sheet(isPresented: $showSheet) {
-                Keypad(quantity: quantity, backgroundColor: Color.black, enteredCode: $enteredCode, selectedUnit: $selectedUnit, savedText: $savedText, isSaveButtonTapped: $isSaveButtonTapped)
-                    .presentationDetents([.height(350)])
+                Keypad(quantity: quantity, backgroundColor: Color.black, recipeItems: $recipeItems, enteredCode: $enteredCode, selectedUnit: $selectedUnit, savedText: $savedText, isSaveButtonTapped: $isSaveButtonTapped, textfield: $textfield)
+                    .presentationDetents([.height(400)])
                     .background(.ultraThinMaterial)
             }
             
-         
+            
         }
-    }
-    struct Keypad: View {
-        var quantity: [String]
-        var backgroundColor: Color
         
+    }
+    
+//    struct SavedItemsView: View {
+//        @Binding var recipeItems: [RecipeItem]
+//
+//        var body: some View {
+//            List(recipeItems) { item in
+//                VStack(alignment: .leading) {
+//                    Text(item.textfield)
+//                        .frame(width: 400, height: 40)
+//                        .background(Color.white.opacity(0.2))
+//                        .foregroundColor(.white)
+//                        .cornerRadius(25)
+//                    Text("\(item.enteredCode) \(item.selectedUnit)")
+//                }
+//            }
+//            .navigationBarTitle("Recipe Items")
+//            .navigationBarItems(trailing: Button("Add") {
+//                // Add any additional actions here
+//            })
+//        }
+//    }
+    struct Keypad: View {
+        var quantity: [String : String]
+        var backgroundColor: Color
+        @Binding var recipeItems: [RecipeItem]
+        @Environment(\.presentationMode) var presentationMode
         @Binding var enteredCode: String
         @Binding var selectedUnit: String?
         @Binding var savedText: String
         @Binding var isSaveButtonTapped: Bool
-        
-        
-        
+        @Binding var textfield: String
+        @State private var selectedItem: String?
+    
         // first HStack
         let firstRowKeypad: [(title: String, backgroundColor: Color, foregroundColor: Color, width: CGFloat, height: CGFloat, font: Font)] = [
             ("1/4", .purple.opacity(0.2), .purple, 63, 30, .system(size: 10)),
@@ -69,8 +165,6 @@ struct CalculatorView: View {
             ("3", .green.opacity(0.2), .green, 80, 30,.system(size: 15)),
             ("/", .blue.opacity(0.2), .blue, 80, 30, .system(size: 15))
         ]
-        
-        
         
         let thirdRowKeypad: [(title: String, backgroundColor: Color, foregroundColor: Color, width: CGFloat, height: CGFloat, font:Font)] = [
             ("4", .green.opacity(0.2), .green, 80, 30, .system(size: 15)),
@@ -91,16 +185,23 @@ struct CalculatorView: View {
         //        ("Delete", .green.opacity(0.2), .green, 70, 30),
         //    ]
         
-        
-        
         var body: some View {
             HStack(alignment: .top) {
                 Button(action: {
-                    savedText = ""
-                    isSaveButtonTapped = true
-                    savedText = "\(enteredCode) \(selectedUnit ?? "")"
-//                    isSaveButtonTapped = false
-//                    isSaveButtonTapped.toggle()
+//                    savedText = ""
+//                    isSaveButtonTapped = true
+                    if textfield != "" && enteredCode != "" && selectedUnit !=  "" {
+//                        savedText = "\(textfield) \(enteredCode) \(selectedUnit ?? "")"
+                        let recipeItem = RecipeItem(textfield: textfield, enteredCode: enteredCode, selectedUnit: selectedUnit ?? "")
+                        print("rec",recipeItem)
+                        recipeItems.append(recipeItem)
+                        print("receipe",recipeItems)
+                        enteredCode = ""
+                        textfield = ""
+                    }
+                   
+                
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Save")
                         .frame(width: 80, height: 40)
@@ -115,9 +216,17 @@ struct CalculatorView: View {
                 Spacer()
                 
                 Button(action: {
-                    // Next action
+                    if textfield != "" && enteredCode != "" && selectedUnit !=  "" {
+//                        savedText = "\(textfield) \(enteredCode) \(selectedUnit ?? "")"
+                        let recipeItem = RecipeItem(textfield: textfield, enteredCode: enteredCode, selectedUnit: selectedUnit ?? "")
+                        print("rec",recipeItem)
+                        recipeItems.append(recipeItem)
+                        print("receipe",recipeItems)
+                        enteredCode = ""
+                        textfield = ""
+                    }
                 }) {
-                    Text("Next")
+                    Text("add")
                         .frame(width: 80, height: 40)
                         .background(Color.green.opacity(0.2))
                         .foregroundColor(.green)
@@ -127,139 +236,143 @@ struct CalculatorView: View {
                 .padding(.top, 20)
             }
             
-            //            if isSaveButtonTapped {
-       
-
-            Spacer()
+            
+            VStack{
+                TextField("Ingredients", text: $textfield)
+                    .foregroundColor(.blue)
+                    .font(.headline)
+                    .multilineTextAlignment(.center)
+            }
+            
+            
             HStack {
-                if enteredCode != "" , let selectedUnit = selectedUnit{
-                          Text("\(enteredCode) \(selectedUnit)")
-                        
-                            .multilineTextAlignment(.center)
-                        } else {
-                          Text("Ingredient")
-                        }
+                if  enteredCode != "" , let selectedUnit = selectedUnit{
+                    Text("\(enteredCode) \(selectedUnit)")
+                        .multilineTextAlignment(.center)
+                }
             }
-            
             Spacer()
-            ZStack {
-                Spacer()
-                    .edgesIgnoringSafeArea(.all)
-                
-                
-                VStack {
-                    // Horizontal Scroll View for Quantity
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 10) {
-                            ForEach(quantity, id: \.self) { item in
-                                KeypadButton(title: item, action: {
-                                    self.selectedUnit =  "\(item)"
-                                   print(item)
-                                    
-                                }, backgroundColor: Color.teal.opacity(0.2), foregroundColor: .blue, width: 100, height: 30, font: .system(size: 15))
-                                
-                            }
-
-                    }
-                .padding()
-            }
-                               
-//
-//                    ScrollView(.horizontal, showsIndicators: false) {
-//                        HStack(spacing: 10) {
-//                            ForEach(quantity, id: \.self) { item in
-//                                if !self.enteredCode.isEmpty {
-//                                    KeypadButton(title: item, action: {
-//                                        // Append the selected item to the enteredCode
-//                                        self.enteredCode = " \(item)"
-//                                        self.selectedUnit = item
-//                                    }, backgroundColor: Color.teal.opacity(0.2), foregroundColor: .blue, width: 100, height: 30, font: .system(size: 15))
-//                                }
-//                            }
-//                        }
-//                        .padding()
-//                    }
-
-
-
-                    VStack {
-                            generateRowButtons(buttons: firstRowKeypad)
-                            generateRowButtons(buttons: secondRowKeypad)
-                            generateRowButtons(buttons: thirdRowKeypad)
-                            generateRowButtons(buttons: fourthRowKeypad)
-
-                            HStack(spacing: 10) {
-                            KeypadButton(title: "0", action: {
-                                
-                                
-                                self.enteredCode += "0"
-                            }, backgroundColor: Color.green.opacity(0.2), foregroundColor:Color.green, width: 170, height: 30, font: .system(size: 15))
-                                    KeypadButton(title: "delete", action: { self.enteredCode = String(self.enteredCode.dropLast()) }, backgroundColor: Color.red.opacity(0.2), foregroundColor:Color.red, width: 170, height: 30,  font: .system(size: 15))
-                                            }
-                                        }
-                    
-                                    }
-                
-                                }
             
+            ZStack(){
+                    Spacer()
+                                .edgesIgnoringSafeArea(.all)
+                            VStack {
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 10) {
+                                        ForEach(Array(quantity.keys), id: \.self) { key in
+                                            KeypadButton(title: key, action: {
+                                                self.selectedUnit = quantity[key]
+                                                self.selectedItem = key
+                                            }, backgroundColor: selectedItem == key ? Color.blue : Color.blue.opacity(0.2),  foregroundColor: selectedItem == key ? .white : .blue, width: 100, height: 30, font: .system(size: 15))
+                                        }
+
+                                    }
+                                    .padding()
+                                }
+                                
+                                VStack {
+                                    generateRowButtons(buttons: firstRowKeypad)
+                                    generateRowButtons(buttons: secondRowKeypad)
+                                    generateRowButtons(buttons: thirdRowKeypad)
+                                    generateRowButtons(buttons: fourthRowKeypad)
+                                    
+                                    HStack(spacing: 10) {
+                                        KeypadButton(title: "0", action: {
+                                            self.enteredCode += "0"
+                                        }, backgroundColor: Color.green.opacity(0.2), foregroundColor:Color.green, width: 170, height: 30, font: .system(size: 15))
+                                        KeypadButton(title: "delete", action: { self.enteredCode = String(self.enteredCode.dropLast()) }, backgroundColor: Color.red.opacity(0.2), foregroundColor:Color.red, width: 170, height: 30,  font: .system(size: 15))
+                                    }
+                                }
+                                
                             }
-    
-     func generateRowButtons(buttons: [(title: String, backgroundColor: Color, foregroundColor: Color, width: CGFloat, height: CGFloat, font: Font)]) -> some View {
-               HStack(spacing: 10) {
-                   ForEach(buttons, id: \.title) { item in
-                       KeypadButton(title: item.title, action: {
-                           print(item.title)
-                           self.enteredCode += item.title
-                       }, backgroundColor: item.backgroundColor, foregroundColor: item.foregroundColor, width: item.width, height: item.height, font: item.font)
-                   }
-               }
-           }
-       }
-
-    struct KeypadButton: View {
-        var title: String
-        var action: () -> Void
-        var backgroundColor: Color
-        var foregroundColor: Color
-        var width: CGFloat
-        var height: CGFloat
+                            
+                        }
+                        .frame(height: 250)
+                        
+                    }
+                    
+                    func generateRowButtons(buttons: [(title: String, backgroundColor: Color, foregroundColor: Color, width: CGFloat, height: CGFloat, font: Font)]) -> some View {
+                        HStack(spacing: 10) {
+                            ForEach(buttons, id: \.title) { item in
+                                KeypadButton(title: item.title, action: {
+                                    print(item.title)
+                                    self.enteredCode += item.title
+                                }, backgroundColor: item.backgroundColor, foregroundColor: item.foregroundColor, width: item.width, height: item.height, font: item.font)
+                            }
+                        }
+                    }
         
-        var font: Font
         
-        var body: some View {
-            Button(action: {
-                action()
-            }) {
-                Text(title)
-                    .frame(width: width, height: height)
-                    .background(backgroundColor)
-                    .foregroundColor(foregroundColor)
-                    .font(font)
-                    .cornerRadius(10)
-            }
+        var addButton: some View {
+            Button("Add", action: {
+                add()
+            })
         }
+
+        
+        func add(){
+            
+        }
+        
+                }
+                
+                struct KeypadButton: View {
+                    var title: String
+                    var action: () -> Void
+                    var backgroundColor: Color
+                    var foregroundColor: Color
+                    var width: CGFloat
+                    var height: CGFloat
+                    
+//                    @State private var isSelected = false
+//                    @GestureState private var isPressed = false
+                    
+                    var font: Font
+                    
+                    var body: some View {
+                        Button(action: {
+                            action()
+//                            isSelected.toggle()
+            //                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+//                                    isSelected = false
+            //                }
+                        }) {
+                            Text(title)
+                                .frame(width: width, height: height)
+                                .background( backgroundColor)
+                                .foregroundColor(foregroundColor)
+                                .font(font)
+                                .cornerRadius(10)
+                        }
+                    }
+            }
+    func delete(indexSet: IndexSet) {
+        recipeItems.remove(atOffsets: indexSet)
     }
-}
-    
-//
-//struct SaveButton: View {
-//        var action: () -> Void
-//
-//        var body: some View {
-//            Button(action: {
-//                action()
-//            }) {
-//                Text("Save")
-//                    .frame(width: 80, height: 40)
+ func deleteItem(_ item: RecipeItem) {
+     if let index = recipeItems.firstIndex(where: { $0.id == item.id }) {
+         recipeItems.remove(at: index)
+     }
+ }
+    }
+
+//            struct SaveButton: View {
+//                var text: String
+//                var action: () -> Void
 //                
-//                    .background(Color.purple.opacity(0.2))
-//                    .foregroundColor(.purple)
-//                    .cornerRadius(25)
+//                var body: some View {
+//                    Button(action: action) {
+//                        Text(text)
+//                            .frame(width: 400, height: 40)
+//                            .background(Color.white.opacity(0.2))
+//                            .foregroundColor(.white)
+//                            .cornerRadius(25)
+//                    }
+//                }
 //            }
-//        }
-//    }
+
+            #Preview {
+             CalculatorView()
+            }
 
 
-#Preview {
- CalculatorView()
-}
